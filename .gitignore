@@ -1,0 +1,64 @@
+# Local archive, originals, notes and verification artifacts.
+/tmp/
+
+# Weights and raw data; small QVHighlights annotations stay versioned.
+/checkpoints/*
+!/checkpoints/README.md
+/data/qvhighlights/videos/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.pkl
+*.mp4
+*.avi
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.tar
+*.tar.gz
+*.zip
+
+# Experiment outputs and caches at any depth.
+output/
+outputs/
+result/
+results/
+logs/
+wandb/
+video_test/
+*.log
+log*.txt
+events.out.tfevents.*
+slurm-*.out
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Build products and environments.
+build/
+dist/
+*.egg-info/
+*.egg
+*.so
+.venv/
+venv/
+.env
+.env.*
+
+# Editor, agent and OS state.
+.agents/
+.codex/
+.superpowers/
+.idea/
+.vscode/
+.DS_Store
+*.swp

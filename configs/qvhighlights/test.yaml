@@ -1,0 +1,51 @@
+model:
+  arch: blip2_mr
+  model_type: pretrain_flant5xl
+  load_finetuned: true
+  finetuned: checkpoints/smart_qvhighlights.pth
+  use_grad_checkpoint: false
+  freeze_vit: true
+  task: qformer_freeze_lora
+  input_time_format: seconds_integers
+  interleave_data: true
+  frame_token_aggregation: false
+  stc_ablation_mode: full_stc
+  keyframe_topk: 32
+  use_audio: true
+  beats_checkpoint: checkpoints/BEATs_iter3.pt
+datasets:
+  qvh:
+    vis_processor:
+      eval:
+        name: blip_video_eval
+        n_frms: 80
+        image_size: 224
+    text_processor:
+      eval:
+        name: blip_question
+        max_words: 50
+run:
+  task: moment_retrieval
+  batch_size_train: 1
+  batch_size_eval: 1
+  num_workers: 8
+  max_len: 200
+  min_len: 8
+  num_beams: 5
+  inference_method: generate
+  seed: 42
+  output_dir: output/qvhighlights/test
+  evaluate: true
+  amp: true
+  test_splits:
+  - test
+  device: cuda
+  world_size: 8
+  dist_url: env://
+  distributed: true
+  use_dist_eval_sampler: true
+  find_unused_parameters: true
+  wandb: false
+  wandb_project: SMART
+  wandb_name: qvhighlights_test
+  report_metric: false

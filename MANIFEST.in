@@ -1,0 +1,16 @@
+include README.md LICENSE.txt THIRD_PARTY_NOTICES.md requirements.txt
+include train.py evaluate.py
+recursive-include configs *.yaml
+recursive-include scripts *.sh
+recursive-include tests *.py
+recursive-include data/qvhighlights *.json *.md
+recursive-include lavis_1019 *.yaml *.json *.txt *.gz
+recursive-include standalone_eval *.py
+prune tmp
+prune checkpoints
+prune output
+prune lavis_1019/output
+global-exclude *.py[cod]
+global-exclude __pycache__
+recursive-include lavis_1019 LICENSE
+include standalone_eval/LICENSE

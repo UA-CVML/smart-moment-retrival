@@ -1,0 +1,17 @@
+datasets:
+  qvh:
+    data_type: videos
+    scene_data_file: data/qvhighlights/scene_boundaries.json
+    build_info:
+      annotations:
+        train:
+          url: data/qvhighlights/train.json
+          storage: data/qvhighlights/train.json
+        val:
+          url: data/qvhighlights/val.json
+          storage: data/qvhighlights/val.json
+        test:
+          url: data/qvhighlights/test_dummy.json
+          storage: data/qvhighlights/test_dummy.json
+      videos:
+        storage: data/qvhighlights/videos
