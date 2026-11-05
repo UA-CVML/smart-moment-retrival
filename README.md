@@ -8,6 +8,10 @@ SMART combines audio information with shot-aware token compression for video mom
 retrieval. This release contains the **QVHighlights** training and inference pipeline,
 built on Mr. BLIP and LAVIS, with BLIP-2 / Flan-T5-XL and a BEATs audio encoder.
 
+<p align="center">
+  <img src="SMART_framework.png" width="850">
+</p>
+
 ## Repository layout
 
 ```text
