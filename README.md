@@ -182,12 +182,12 @@ They do not reproduce full training or the paper's metrics.
 ## Citation
 
 ```bibtex
-@article{yu2025smart,
-  title={SMART: Shot-Aware Multimodal Video Moment Retrieval with Audio-Enhanced MLLM},
-  author={Yu, An and Lu, Weiheng and Li, Jian and Zhang, Zhenfei and Shen, Yunhang and Ye, Felix X.-F. and Chang, Ming-Ching},
-  journal={arXiv preprint arXiv:2511.14143},
-  year={2025},
-  url={https://arxiv.org/abs/2511.14143}
+@article{yu2026smart,
+  title={Smart: Shot-aware multimodal video moment retrieval with audio-enhanced mllm},
+  author={Yu, An and Lu, Weiheng and Li, Jian and Zhang, Zhenfei and Shen, Yunhang and Ye, Felix X-F and Chang, Ming-Ching},
+  journal={IEEE Transactions on Multimedia},
+  year={2026},
+  publisher={IEEE}
 }
 ```
 
