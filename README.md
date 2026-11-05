@@ -1,6 +1,6 @@
 # SMART: Shot-Aware Multimodal Video Moment Retrieval with Audio-Enhanced MLLM
 
-[Paper]([https://arxiv.org/abs/2511.14143](https://ieeexplore.ieee.org/abstract/document/11655331)) · [PDF](https://arxiv.org/pdf/2511.14143)
+[Paper](https://ieeexplore.ieee.org/abstract/document/11655331) · [PDF](https://arxiv.org/pdf/2511.14143)
 
 **An Yu, Weiheng Lu, Jian Li, Zhenfei Zhang, Yunhang Shen, Felix X.-F. Ye, and Ming-Ching Chang**
 
